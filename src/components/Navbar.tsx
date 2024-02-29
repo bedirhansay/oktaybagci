@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 
+import React, { useEffect, useState } from "react";
 import { SheetComp } from "./Sheet";
 import logo from "../../public/logo-img.png";
 import Image from "next/image";
@@ -15,12 +16,31 @@ export const Navbar = () => {
     </ul>
   );
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="max-w-3xl mx-auto items-center py-12 fixed left-0 right-0 w-full text-white">
+    <nav
+      className={`max-w-3xl mx-auto items-center py-12 fixed left-0 right-0 w-full text-white ${
+        isScrolled ? "backdrop-blur-md" : ""
+      }`}
+    >
       <ul className="hidden web-navbar sm:flex items-center mx-auto justify-between w-full">
         <li>Startpagina</li>
         <li>Over ons</li>
-        <li className="flex flex-col items-center">
+        <li className="flex hover:border-none flex-col items-center">
           <Image alt="logo" src={logo} />
         </li>
         <li>Onze Diensten</li>
