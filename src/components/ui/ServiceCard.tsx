@@ -9,10 +9,10 @@ type ServiceCardProps = {
 
 export const ServiceCard: FC<ServiceCardProps> = ({ image, title, desc }) => {
   return (
-    <div className="border p-2 shadow-lg rounded flex flex-col gap-2 items-center justify-between">
+    <div className=" p-4 shadow-lg rounded flex flex-col gap-2 items-center justify-between">
       <Image alt="Image" src={image} />
-      <h2>{title}</h2>
-      <p>{desc}</p>
+      <h2 className="font-semibold">{title}</h2>
+      <p className="text-center">{desc}</p>
     </div>
   );
 };

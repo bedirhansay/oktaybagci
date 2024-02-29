@@ -104,3 +104,18 @@
     @apply hover:border-b transition-all ease-out duration-300 px-2 cursor-pointer;
   }
 }
+
+.swiper-button-next {
+  color: yellow !important;
+  @apply md:border md:p-12 rounded-full w-4 h-4 hover:bg-customYellow;
+}
+
+.swiper-button-prev {
+  color: yellow !important;
+  @apply md:border md:p-12 rounded-full w-4 h-4 hover:bg-customYellow;
+}
+
+.swiper-scrollbar swiper-scrollbar-horizontal {
+  color: yellow !important;
+  @apply border p-16 rounded-full hover:bg-customYellow;
+}

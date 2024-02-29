@@ -32,27 +32,35 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`max-w-3xl mx-auto items-center py-12 fixed left-0 right-0 w-full text-white ${
-        isScrolled ? "backdrop-blur-md" : ""
+    <div
+      className={` mx-auto items-center fixed left-0 right-0 w-full text-white ${
+        isScrolled ? "backdrop-blur-md bg-black py-0" : ""
       }`}
     >
-      <ul className="hidden web-navbar sm:flex items-center mx-auto justify-between w-full">
-        <li>Startpagina</li>
-        <li>Over ons</li>
-        <li className="flex hover:border-none flex-col items-center">
-          <Image alt="logo" src={logo} />
-        </li>
-        <li>Onze Diensten</li>
-        <li>Contact</li>
-      </ul>
+      <nav
+        className={`max-w-3xl mx-auto items-center py-12  left-0 right-0 w-full text-white ${
+          isScrolled ? "backdrop-blur-md" : ""
+        }`}
+      >
+        <div>
+          <ul className="hidden web-navbar sm:flex items-center mx-auto justify-between w-full">
+            <li>Startpagina</li>
+            <li>Over ons</li>
+            <li className="flex hover:border-none flex-col items-center">
+              <Image alt="logo" src={logo} />
+            </li>
+            <li>Onze Diensten</li>
+            <li>Contact</li>
+          </ul>
 
-      {/* //! Mobile navbar */}
+          {/* //! Mobile navbar */}
 
-      <div className="flex items-center justify-between w-full px-4 sm:hidden  ">
-        <Image alt="logo" src={logo} />
-        <SheetComp triggerIcon={<Menu />} sheetContent={sheetContent} />
-      </div>
-    </nav>
+          <div className="flex items-center justify-between w-full px-4 sm:hidden  ">
+            <Image alt="logo" src={logo} />
+            <SheetComp triggerIcon={<Menu />} sheetContent={sheetContent} />
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 };
