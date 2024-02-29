@@ -5,14 +5,28 @@ import { SheetComp } from "./Sheet";
 import logo from "../../public/logo-img.png";
 import Image from "next/image";
 import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
+  const pathname = usePathname();
+
+  const path = pathname === "/";
+  console.log(path);
+
   const sheetContent = (
     <ul className=" flex flex-col gap-4 text-black justify-between items-center text-4xl mt-2 navbar ">
-      <li>Startpagina</li>
-      <li>Over ons</li>
-      <li>Onze Diensten</li>
-      <li>Contact</li>
+      <li>
+        <a href="/">Startpagina</a>
+      </li>
+      <li>
+        <a href="/over-ons">Over Ons</a>
+      </li>
+      <li>
+        <a href="/#onze-diesten">Onze Diesten</a>
+      </li>
+      <li>
+        <a href="/#contact">Contact</a>
+      </li>
     </ul>
   );
 
@@ -33,8 +47,12 @@ export const Navbar = () => {
 
   return (
     <div
-      className={` mx-auto items-center fixed left-0 right-0 w-full text-white ${
-        isScrolled ? "backdrop-blur-md bg-black py-0" : ""
+      className={`mx-auto items-center fixed z-50 left-0 right-0 w-full text-white ${
+        isScrolled
+          ? "backdrop-blur-md bg-[#292B2C] py-0"
+          : path
+          ? ""
+          : "bg-[#292B2C]"
       }`}
     >
       <nav
@@ -44,13 +62,21 @@ export const Navbar = () => {
       >
         <div>
           <ul className="hidden web-navbar sm:flex items-center mx-auto justify-between w-full">
-            <li>Startpagina</li>
-            <li>Over ons</li>
+            <li>
+              <a href="/">Startpagina</a>
+            </li>
+            <li>
+              <a href="/over-ons">Over Ons</a>
+            </li>
             <li className="flex hover:border-none flex-col items-center">
               <Image alt="logo" src={logo} />
             </li>
-            <li>Onze Diensten</li>
-            <li>Contact</li>
+            <li>
+              <a href="/#onze-diesten">Onze Diesten</a>
+            </li>
+            <li>
+              <a href="/#contact">Contact</a>
+            </li>
           </ul>
 
           {/* //! Mobile navbar */}

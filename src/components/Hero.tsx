@@ -3,7 +3,7 @@ import React from "react";
 import arrow from "../../public/arrow.svg";
 export const Hero = () => {
   return (
-    <div className="min-h-screen bg-image">
+    <div id="hero" className="min-h-screen bg-image">
       <div className="absolutes w-full text-white flex flex-col items-center gap-8">
         <h2 className="text-2xl sm:text-6xl max-w-xl text-center w-full uppercase">
           handen die je stijl raken

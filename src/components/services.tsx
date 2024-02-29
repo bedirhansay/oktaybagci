@@ -4,7 +4,10 @@ import { ServiceCard } from "./ui/ServiceCard";
 
 export const Services = () => {
   return (
-    <div className="clamp flex flex-col gap-12 ">
+    <div
+      id="onze-diesten"
+      className="clamp !scroll-mt-52 flex flex-col gap-12 "
+    >
       <div className="text-center flex flex-col gap-4">
         <h2 className="text-customYellow text-bold text-center text-2xl font-bold">
           DIENSTEN

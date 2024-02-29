@@ -10,9 +10,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import logo from "../../public/logo-img.png";
-import Image from "next/image";
-import { Menu } from "lucide-react";
 
 type SheetProps = {
   triggerIcon: ReactElement;

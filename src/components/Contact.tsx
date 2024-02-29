@@ -1,5 +1,9 @@
 import React from "react";
 
 export const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div id="contact" className="scroll-mt-28">
+      Contact
+    </div>
+  );
 };

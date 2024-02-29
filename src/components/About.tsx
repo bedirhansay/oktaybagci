@@ -26,7 +26,9 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <button className="border">Meer</button>
+        <button className="border">
+          <a href="/over-ons">Meer</a>
+        </button>
       </div>
     </div>
   );
