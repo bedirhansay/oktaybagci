@@ -5,11 +5,11 @@ export const Hero = () => {
   return (
     <div className="min-h-screen bg-image">
       <Image
-        className="absolutes z-10 bg-transparent opacity-45 "
+        className="absolutes z-10 bg-transparent opacity-45 px-8  rounded hover:opacity-85 transition-all ease-in-out  duration-300"
         alt=""
         src={intro}
       ></Image>
-      <p className="text-white absolute bg-rose-600 py-10 top-4 px-4 opacity-65 animate-pulse right-0 w-fit text-center  rounded uppercase ">
+      <p className="text-white absolute bg-rose-600 py-10 top-4 px-4 opacity-100 animate-pulse right-0 w-fit text-center  rounded uppercase ">
         Onze website is momenteel in aanbouw.
       </p>
     </div>

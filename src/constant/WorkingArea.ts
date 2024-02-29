@@ -8,7 +8,7 @@ const workingArea = [
     photo: "",
   },
   {
-    name: "Tasarım",
+    name: "Ontwerp",
     photo: "",
   },
 ];
