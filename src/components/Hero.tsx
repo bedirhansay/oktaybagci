@@ -6,10 +6,10 @@ export const Hero = () => {
   return (
     <div className="min-h-screen bg-image">
       <div className="absolutes w-full text-white flex flex-col items-center gap-8">
-        <h2 className="text-6xl text-center w-full uppercase">
+        <h2 className="text-2xl sm:text-6xl text-center w-full uppercase">
           handen die je stijl raken
         </h2>
-        <p className="text-center">
+        <p className="text-center px-4">
           We volgen de trends met ons deskundige team en voegen een gloednieuwe
           schoonheid toe aan je haar.
         </p>
@@ -20,7 +20,7 @@ export const Hero = () => {
 
       <div>
         <Image
-          className="absolute bottom-10 left-[50%] animate-pulse"
+          className="absolute bottom-10 left-[50%] -translate-x-1/2 animate-pulse"
           alt="arrow"
           src={arrow}
         />
