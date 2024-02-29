@@ -1,17 +1,30 @@
 import Image from "next/image";
 import React from "react";
 import intro from "../../public/logo.svg";
+import arrow from "../../public/arrow.svg";
 export const Hero = () => {
   return (
     <div className="min-h-screen bg-image">
-      <Image
-        className="absolutes z-10 bg-transparent opacity-45 px-8  rounded hover:opacity-85 transition-all ease-in-out  duration-300"
-        alt=""
-        src={intro}
-      ></Image>
-      <p className="text-white absolute bg-rose-600 py-10 top-4 px-4 opacity-100 animate-pulse right-0 w-fit text-center  rounded uppercase ">
-        Onze website is momenteel in aanbouw.
-      </p>
+      <div className="absolutes w-full text-white flex flex-col items-center gap-8">
+        <h2 className="text-6xl text-center w-full uppercase">
+          handen die je stijl raken
+        </h2>
+        <p className="text-center">
+          We volgen de trends met ons deskundige team en voegen een gloednieuwe
+          schoonheid toe aan je haar.
+        </p>
+        <button className="border px-8 py-2 text-3xl hover:bg-gray-100 hover:text-black shadow-md transition-all ease-out duration-300 ">
+          Meer
+        </button>
+      </div>
+
+      <div>
+        <Image
+          className="absolute bottom-10 left-[50%] animate-pulse"
+          alt="arrow"
+          src={arrow}
+        />
+      </div>
     </div>
   );
 };
