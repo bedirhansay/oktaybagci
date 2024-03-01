@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import about from "../../public/about-img.png";
-import { Button } from "./ui/button";
 
 export const About = () => {
   return (
@@ -9,7 +8,7 @@ export const About = () => {
       <Image alt="" src={about} />
       <div className="flex flex-col gap-2 justify-between">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[#FFCC01] text-3xl font-bold">Over Ons</h2>
+          <h2 className="text-customYellow text-3xl font-bold">Over Ons</h2>
           <p className="text-2xl">
             Beeld is het beeld dat we achterlaten in de hoofden van anderen.
           </p>
@@ -19,14 +18,14 @@ export const About = () => {
             imago vorm te geven in onze kapsalon.
           </p>
           <div className="flex gap-2">
-            <span className="w-2 bg-[#FFCC01] rounded"></span>
+            <span className="w-1 bg-customYellow rounded"></span>
             <p>
               Vergeet niet dat je haar ook een weerspiegeling is van je
               karakter.
             </p>
           </div>
         </div>
-        <button className="border">
+        <button className="border py-2">
           <a href="/over-ons">Meer</a>
         </button>
       </div>

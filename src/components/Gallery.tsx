@@ -43,7 +43,7 @@ export const Gallery = () => {
               }}
               key={idx + "k"}
             >
-              <Image className="" alt="" fill src={item} />
+              <Image alt="" fill src={item} />
             </SwiperSlide>
           ))}
         </Swiper>

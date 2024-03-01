@@ -3,10 +3,10 @@ import React from "react";
 export const Firm = () => {
   return (
     <div className="max-w-5xl mx-auto px-4">
-      <h2 className="font-semibold">
+      <h2 className="font-semibold text-2xl">
         Beeld is het beeld dat we achterlaten in de hoofden van anderen.
       </h2>
-      <p>
+      <p className="text-justify tracking-wide leading-relaxed">
         Lorem ipsum dolor sit amet consectetur. Integer mi tortor magna feugiat
         viverra consectetur. Porta volutpat interdum tellus cursus dignissim
         nunc at enim ultrices. Sagittis integer netus morbi cras nisl diam. Et
