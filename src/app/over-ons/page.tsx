@@ -14,9 +14,8 @@ export default function page() {
         <About />
         <Firm />
         <Brands />
-        <Certificate />
       </div>
-
+      <Certificate />
       <Footer />
     </div>
   );
