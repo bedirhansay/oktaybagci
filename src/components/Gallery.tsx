@@ -20,11 +20,11 @@ import { sliders } from "@/constant/WorkingArea";
 
 export const Gallery = () => {
   return (
-    <div className="bg-customGray">
-      <h2 className="text-2xl font-bold text-center mt-4 text-customYellow">
+    <div className="bg-customGray pt-8 pb-16">
+      <h2 className="text-2xl uppercase font-bold text-center mt-4 text-customYellow">
         Gallery
       </h2>
-      <p className="text-2xl mb-4 text-center text-white ">Our Works</p>
+      <p className="text-4xl mb-16 text-center text-white ">Our Works</p>
 
       <div className="mb-16 mt-4 clamp">
         <Swiper

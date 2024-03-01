@@ -50,11 +50,19 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-8 items-center justify-center my-8">
           <Image alt="logo" src={logo} />
-          <ul className=" flex text-white gap-4 justify-between items-center  ">
-            <li>Startpagina</li>
-            <li>Over ons</li>
-            <li>Onze Diensten</li>
-            <li>Contact</li>
+          <ul className=" flex text-white cursor-pointer gap-4 justify-between items-center  ">
+            <li>
+              <a href="/">Startpagina</a>
+            </li>
+            <li>
+              <a href="/over-ons">Over Ons</a>
+            </li>
+            <li>
+              <a href="/#onze-diesten">Onze Diesten</a>
+            </li>
+            <li>
+              <a href="/#contact">Contact</a>
+            </li>
           </ul>
           <hr />
 

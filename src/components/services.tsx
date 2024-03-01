@@ -12,8 +12,10 @@ export const Services = () => {
         <h2 className="text-customYellow text-bold text-center text-2xl font-bold">
           DIENSTEN
         </h2>
-        <p className="text-2xl">UW HAAR EN UW UITERLIJKVERTROUWD AAN ONS</p>
-        <p className="text-sm ">
+        <p className="text-4xl max-w-2xl mx-auto">
+          UW HAAR EN UW UITERLIJKVERTROUWD AAN ONS
+        </p>
+        <p className="text-sm max-w-2xl mx-auto">
           Wij combineren een moderne aanpak met de traditionele kapperskunst en
           bieden elk van onze klanten een bijzondere ervaring.
         </p>

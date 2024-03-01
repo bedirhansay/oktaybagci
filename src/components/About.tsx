@@ -8,8 +8,10 @@ export const About = () => {
       <Image alt="" src={about} />
       <div className="flex flex-col gap-2 justify-between">
         <div className="flex flex-col gap-4">
-          <h2 className="text-customYellow text-3xl font-bold">Over Ons</h2>
-          <p className="text-2xl">
+          <h2 className="text-customYellow text-2xl font-bold uppercase">
+            Over Ons
+          </h2>
+          <p className="text-4xl">
             Beeld is het beeld dat we achterlaten in de hoofden van anderen.
           </p>
           <p>
@@ -25,7 +27,7 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <button className="border py-2">
+        <button className="border py-2 max-w-24">
           <a href="/over-ons">Meer</a>
         </button>
       </div>
