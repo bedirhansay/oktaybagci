@@ -2,11 +2,12 @@ import man from "../../public/man-hair-design.svg";
 import woman from "../../public/woman-hair-design.png";
 import organization from "../../public/trimming.png";
 
-import slider1 from "../../public/contact-img.jpg";
-import slider3 from "../../public/hero-image.jpg";
-import slider4 from "../../public/contact-img.jpg";
-import slider5 from "../../public/about-img.png";
-import slider6 from "../../public/vrouv.jpg";
+import slider1 from "../../public/gallery/g1.jpg";
+import slider2 from "../../public/gallery/g2.jpg";
+import slider3 from "../../public/gallery/g3.jpg";
+import slider4 from "../../public/gallery/g4.jpg";
+import slider5 from "../../public/gallery/g5.jpg";
+import slider6 from "../../public/gallery/g6.jpg";
 
 import keraste from "../../public/markalar/keraste.png";
 import loreal from "../../public/markalar/loreal.png";
@@ -37,7 +38,7 @@ export const workingArea = [
   },
 ];
 
-export const sliders = [slider1, slider6, slider3, slider5];
+export const sliders = [slider1, slider2, slider6, slider4, slider3, slider5];
 
 export const brands = [
   keraste,

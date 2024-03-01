@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <div className="bg-customGray ">
       <div className="clamp">
-        <div className="flex flex-col gap-4 items-center md:flex-row justify-between py-12 text-white">
+        <div className="flex flex-col gap-4 md:flex-row justify-between py-12 text-white">
           <div className="flex gap-2 items-center">
             <span className="border m-4 p-2 rounded">
               <Phone />
@@ -21,21 +21,21 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-2 justify-center items-center">
+          <div className="flex gap-2 items-center">
             <span className="border m-4 p-2 rounded">
               <MapPin />
             </span>
 
-            <div className="flex flex-col items-center">
-              <span className="flex gap-2 text-center">Plaats</span>
-              <p className="text-center">
+            <div className="flex flex-col">
+              <span className="!text-left">Plaats</span>
+              <p>
                 BORAZANLAR MH. AKŞEMSETTİN CD. GAYRETLİ, APT. NO:6, 14100
                 Merkez/Bolu
               </p>
             </div>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <span className="border m-4 p-2 rounded">
               <Clock />
             </span>

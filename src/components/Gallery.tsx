@@ -28,22 +28,26 @@ export const Gallery = () => {
 
       <div className="mb-16 mt-4 clamp">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           slidesPerView="auto"
+          className="w-full"
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           navigation
+          loop
+          speed={1800}
+          freeMode
           autoplay
           scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
         >
           {sliders.map((item, idx) => (
-            <SwiperSlide
-              style={{
-                aspectRatio: "16/9",
-              }}
-              key={idx + "k"}
-            >
-              <Image alt="" fill src={item} />
+            <SwiperSlide className="m-2 !w-96" key={idx + "k"}>
+              <Image
+                width={400}
+                loading="lazy"
+                className=" aspect-square"
+                src={item}
+                alt=""
+                sizes="(min-width: 640px) 176px, 200px"
+              />
             </SwiperSlide>
           ))}
         </Swiper>

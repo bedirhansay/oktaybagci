@@ -4,7 +4,10 @@ import about from "../../public/about-img.png";
 
 export const About = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 clamp">
+    <div
+      id="over-ons"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-3 clamp scroll-mt-4"
+    >
       <Image alt="" src={about} />
       <div className="flex flex-col gap-2 justify-between">
         <div className="flex flex-col gap-4">

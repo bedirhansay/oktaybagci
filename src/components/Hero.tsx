@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import arrow from "../../public/arrow.svg";
@@ -12,9 +14,12 @@ export const Hero = () => {
           We volgen de trends met ons deskundige team en voegen een gloednieuwe
           schoonheid toe aan je haar.
         </p>
-        <button className="border px-8 py-2 text-3xl hover:bg-gray-100 hover:text-black shadow-md transition-all ease-out duration-300 ">
+        <a
+          href="#over-ons"
+          className="border px-8 py-2 text-3xl hover:bg-gray-100 hover:text-black shadow-md transition-all ease-out duration-300 "
+        >
           Meer
-        </button>
+        </a>
       </div>
 
       <div>

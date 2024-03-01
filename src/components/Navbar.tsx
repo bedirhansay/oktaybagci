@@ -56,7 +56,7 @@ export const Navbar = () => {
       }`}
     >
       <nav
-        className={`max-w-3xl mx-auto items-center py-12  left-0 right-0 w-full text-white ${
+        className={`max-w-3xl mx-auto items-center py-4  left-0 right-0 w-full text-white ${
           isScrolled ? "backdrop-blur-md" : ""
         }`}
       >
