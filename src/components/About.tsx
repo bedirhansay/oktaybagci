@@ -11,7 +11,7 @@ export const About = () => {
           <h2 className="text-customYellow text-2xl font-bold uppercase">
             Over Ons
           </h2>
-          <p className="text-4xl">
+          <p className="text-4xl uppercase">
             Beeld is het beeld dat we achterlaten in de hoofden van anderen.
           </p>
           <p>
