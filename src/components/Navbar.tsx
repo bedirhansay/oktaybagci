@@ -11,7 +11,6 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   const path = pathname === "/";
-  console.log(path);
 
   const sheetContent = (
     <ul className=" flex flex-col gap-4 text-black justify-between items-center text-4xl mt-2 navbar ">
