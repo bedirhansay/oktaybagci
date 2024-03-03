@@ -15,6 +15,7 @@ export const Navbar = () => {
   const path = pathname === "/";
   const local = useLocale();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [sheetOpen, setSheetOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,17 +36,28 @@ export const Navbar = () => {
     <ul className=" flex flex-col gap-4 text-black justify-between items-center text-4xl mt-2 navbar ">
       <LocalSwitcher />
       <li>
-        <Link href={`/${local}`}>{t("homepage")}</Link>
+        <Link onClick={() => setSheetOpen(false)} href={`/${local}`}>
+          {t("homepage")}
+        </Link>
       </li>
       <li>
-        <Link href={`/${local}/over-ons`}>{t("about-us")}</Link>
+        <Link onClick={() => setSheetOpen(false)} href={`/${local}/over-ons`}>
+          {t("aboutUs")}
+        </Link>
       </li>
 
       <li>
-        <Link href={`/${local}/#onze-diesten`}>{t("services")}</Link>
+        <Link
+          onClick={() => setSheetOpen(false)}
+          href={`/${local}/#onze-diesten`}
+        >
+          {t("services")}
+        </Link>
       </li>
-      <li>
-        <Link href={`/${local}/#contact`}>{t("contact")}</Link>
+      <li onClick={() => setSheetOpen(false)}>
+        <Link onClick={() => setSheetOpen(false)} href={`/${local}/#contact`}>
+          {t("contact")}
+        </Link>
       </li>
     </ul>
   );
@@ -68,19 +80,39 @@ export const Navbar = () => {
         <div>
           <ul className="hidden web-navbar sm:flex items-center mx-auto justify-between w-full">
             <li>
-              <Link href={`/${local}`}>{t("homepage")}</Link>
+              <Link onClick={() => setSheetOpen(false)} href={`/${local}`}>
+                {t("homepage")}
+              </Link>
             </li>
             <li>
-              <Link href={`/${local}/over-ons`}>{t("aboutUs")}</Link>
+              <Link
+                onClick={() => setSheetOpen(false)}
+                href={`/${local}/over-ons`}
+              >
+                {t("aboutUs")}
+              </Link>
             </li>
-            <li className="flex hover:border-none flex-col items-center">
+            <li
+              onClick={() => setSheetOpen(false)}
+              className="flex hover:border-none flex-col items-center"
+            >
               <Image alt="logo" src={logo} />
             </li>
             <li>
-              <Link href={`/${local}/#onze-diesten`}>{t("services")}</Link>
+              <Link
+                onClick={() => setSheetOpen(false)}
+                href={`/${local}/#onze-diesten`}
+              >
+                {t("services")}
+              </Link>
             </li>
-            <li>
-              <Link href={`/${local}/#contact`}>{t("contact")}</Link>
+            <li onClick={() => setSheetOpen(false)}>
+              <Link
+                onClick={() => setSheetOpen(false)}
+                href={`/${local}/#contact`}
+              >
+                {t("contact")}
+              </Link>
             </li>
 
             <LocalSwitcher />
@@ -91,7 +123,12 @@ export const Navbar = () => {
           <div className="flex items-center justify-between w-full px-4 sm:hidden  ">
             <Image alt="logo" src={logo} />
 
-            <SheetComp triggerIcon={<Menu />} sheetContent={sheetContent} />
+            <SheetComp
+              closeSheet={sheetOpen}
+              openSheet={setSheetOpen}
+              triggerIcon={<Menu />}
+              sheetContent={sheetContent}
+            />
           </div>
         </div>
       </nav>

@@ -10,7 +10,6 @@ export const Services = () => {
   const locale = useLocale();
   const t = (key: string) => getTranslation(key, locale);
 
-  console.log(t);
   return (
     <div
       id="onze-diesten"

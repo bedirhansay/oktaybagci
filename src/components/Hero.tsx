@@ -14,7 +14,7 @@ export const Hero = () => {
         <h2 className="text-2xl sm:text-6xl max-w-xl text-center w-full uppercase">
           {t("title")}
         </h2>
-        <p className="text-center px-4">{t("subTitle")}</p>
+        <p className="text-center font-semibold px-4">{t("subTitle")}</p>
         <a
           href="#over-ons"
           className="text-3xl hover:bg-gray-100 hover:text-black shadow-md  "
