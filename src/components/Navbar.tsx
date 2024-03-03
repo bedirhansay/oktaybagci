@@ -6,29 +6,14 @@ import logo from "../../public/logo-img.png";
 import Image from "next/image";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import LocalSwitcher from "./localSwitcher";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 export const Navbar = () => {
   const pathname = usePathname();
-
   const path = pathname === "/";
-
-  const sheetContent = (
-    <ul className=" flex flex-col gap-4 text-black justify-between items-center text-4xl mt-2 navbar ">
-      <li>
-        <a href="/">Startpagina</a>
-      </li>
-      <li>
-        <a href="/over-ons">Over Ons</a>
-      </li>
-      <li>
-        <a href="/#onze-diesten">Onze Diesten</a>
-      </li>
-      <li>
-        <a href="/#contact">Contact</a>
-      </li>
-    </ul>
-  );
-
+  const local = useLocale();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -43,6 +28,27 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const t = useTranslations("navbar");
+
+  const sheetContent = (
+    <ul className=" flex flex-col gap-4 text-black justify-between items-center text-4xl mt-2 navbar ">
+      <LocalSwitcher />
+      <li>
+        <Link href={`/${local}`}>{t("homepage")}</Link>
+      </li>
+      <li>
+        <Link href={`/${local}/over-ons`}>{t("about-us")}</Link>
+      </li>
+
+      <li>
+        <Link href={`/${local}/#onze-diesten`}>{t("services")}</Link>
+      </li>
+      <li>
+        <Link href={`/${local}/#contact`}>{t("contact")}</Link>
+      </li>
+    </ul>
+  );
 
   return (
     <div
@@ -62,26 +68,29 @@ export const Navbar = () => {
         <div>
           <ul className="hidden web-navbar sm:flex items-center mx-auto justify-between w-full">
             <li>
-              <a href="/">Startpagina</a>
+              <Link href={`/${local}`}>{t("homepage")}</Link>
             </li>
             <li>
-              <a href="/over-ons">Over Ons</a>
+              <Link href={`/${local}/over-ons`}>{t("aboutUs")}</Link>
             </li>
             <li className="flex hover:border-none flex-col items-center">
               <Image alt="logo" src={logo} />
             </li>
             <li>
-              <a href="/#onze-diesten">Onze Diesten</a>
+              <Link href={`/${local}/#onze-diesten`}>{t("services")}</Link>
             </li>
             <li>
-              <a href="/#contact">Contact</a>
+              <Link href={`/${local}/#contact`}>{t("contact")}</Link>
             </li>
+
+            <LocalSwitcher />
           </ul>
 
           {/* //! Mobile navbar */}
 
           <div className="flex items-center justify-between w-full px-4 sm:hidden  ">
             <Image alt="logo" src={logo} />
+
             <SheetComp triggerIcon={<Menu />} sheetContent={sheetContent} />
           </div>
         </div>

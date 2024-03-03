@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "homepage": "Homepage",
+    "aboutUs": "About Us",
+    "services": "Our Services",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Crafting Your Style",
+    "subTitle": "Our expert team follows trends and adds a touch of new beauty to your hair.",
+    "readMore": "Read More"
+  },
+
+  "aboutUs": {
+    "title": "About Us",
+    "subTitle": "Image is what we leave in others' minds.",
+    "notes": {
+      "note1": "In every strand of hair, there is a trace of your personality. Shape your image at our salon to create the perfect picture you'll leave in others' minds.",
+      "note2": "Remember, your hair is also a reflection of your character."
+    },
+    "readMore": "Read More",
+    "brandsWork": "Brands We Work With",
+    "certificate": "Our Certificates"
+  },
+
+  "services": {
+    "title": "Our Services",
+    "subTitle": "YOUR HAIR AND APPEARANCE ARE ENTRUSTED TO US",
+    "notes": {
+      "note1": "We blend modern approach with traditional hairdressing art, providing a unique experience to each of our customers.",
+      "note2": "Remember, your hair is also a reflection of your character."
+    },
+    "readMore": "Read More",
+    "categories": {
+      "man": {
+        "title": "Men's Hair Design",
+        "subTitle": "Blending modern approach with traditional hairdressing art, we provide a unique experience to each of our male customers."
+      },
+      "woman": {
+        "title": "Women's Hair Design",
+        "subTitle": "Blending modern approach with traditional hairdressing art, we provide a unique experience to each of our female customers."
+      },
+      "organization": {
+        "title": "Organization",
+        "subTitle": "Blending modern approach with traditional hairdressing art, we provide a unique experience for special events."
+      }
+    }
+  },
+
+  "gallery": {
+    "title": "Gallery",
+    "subTitle": "Our Works"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Get in Touch with Us",
+    "description": "If you want to learn more, you can contact us through the channels related to us."
+  },
+
+  "footer": {
+    "phoneNumber": "Phone Number",
+    "location": "Location",
+    "workHours": "Work Hours",
+    "homepage": "Homepage",
+    "aboutUs": "About Us",
+    "services": "Our Services",
+    "contact": "Contact"
+  }
+}

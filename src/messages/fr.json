@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "homepage": "Accueil",
+    "aboutUs": "À Propos de Nous",
+    "services": "Nos Services",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Affinez Votre Style",
+    "subTitle": "Notre équipe d'experts suit les tendances et ajoute une touche de nouvelle beauté à vos cheveux.",
+    "readMore": "En savoir plus"
+  },
+
+  "aboutUs": {
+    "title": "À Propos de Nous",
+    "subTitle": "L'image est ce que nous laissons dans l'esprit des autres.",
+    "notes": {
+      "note1": "Dans chaque mèche de cheveux, il y a une trace de votre personnalité. Façonnez votre image dans notre salon pour créer la photo parfaite que vous laisserez dans l'esprit des autres.",
+      "note2": "N'oubliez pas, vos cheveux sont aussi une réflexion de votre caractère."
+    },
+    "readMore": "En savoir plus",
+    "brandsWork": "Marques avec lesquelles nous travaillons",
+    "certificate": "Nos Certificats"
+  },
+
+  "services": {
+    "title": "Nos Services",
+    "subTitle": "VOS CHEVEUX ET VOTRE APPARENCE NOUS SONT CONFIÉS",
+    "notes": {
+      "note1": "Nous mêlons une approche moderne à l'art traditionnel de la coiffure, offrant une expérience unique à chacun de nos clients.",
+      "note2": "N'oubliez pas, vos cheveux sont aussi une réflexion de votre caractère."
+    },
+    "readMore": "En savoir plus",
+    "categories": {
+      "man": {
+        "title": "Coiffure Homme",
+        "subTitle": "En associant une approche moderne à l'art traditionnel de la coiffure, nous offrons une expérience unique à chacun de nos clients masculins."
+      },
+      "woman": {
+        "title": "Coiffure Femme",
+        "subTitle": "En associant une approche moderne à l'art traditionnel de la coiffure, nous offrons une expérience unique à chacun de nos clients féminins."
+      },
+      "organization": {
+        "title": "Organisation",
+        "subTitle": "En associant une approche moderne à l'art traditionnel de la coiffure, nous offrons une expérience unique pour les événements spéciaux."
+      }
+    }
+  },
+
+  "gallery": {
+    "title": "Galerie",
+    "subTitle": "Nos Travaux"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Contactez-nous",
+    "description": "Si vous souhaitez en savoir plus, vous pouvez nous contacter via les canaux qui nous concernent."
+  },
+
+  "footer": {
+    "phoneNumber": "Numéro de Téléphone",
+    "location": "Emplacement",
+    "workHours": "Heures de Travail",
+    "homepage": "Accueil",
+    "aboutUs": "À Propos de Nous",
+    "services": "Nos Services",
+    "contact": "Contact"
+  }
+}

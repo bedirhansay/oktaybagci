@@ -1,0 +1,70 @@
+{
+  "navbar": {
+    "homepage": "Anasayfa",
+    "aboutUs": "Hakkımızda",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim"
+  },
+
+  "hero": {
+    "title": "Stilinize dokunan eller",
+    "subTitle": "Uzman ekibimizle trendleri takip ediyor, saçlarınıza yepyeni bir güzellik katıyoruz.",
+    "readMore": "Daha fazla"
+  },
+
+  "aboutUs": {
+    "title": "Hakkımızda",
+    "subTitle": "İmaj bizim, başkalarının zihninde bıraktığımız resmimizdir.",
+    "notes": {
+      "note1": "Her saç telinde, kişiliğinizin bir izi vardır. Kuaförümüzde, imajınızı şekillendirerek başkalarının zihninde bırakacağınız mükemmel resmi oluşturun.",
+      "note2": "Saçlarınızın aynı zamanda karakterinizin de bir yansıması olduğunu unutmayın."
+    },
+    "readMore": "Daha fazla",
+    "brandsWork": "Çalıştığımız Markalar",
+    "certificate": "Sertifikalarımız"
+  },
+
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subTitle": "SAÇLARINIZ VE GÖRÜNÜMÜNÜZ BİZE EMANET",
+    "notes": {
+      "note1": "Modern bir yaklaşımla geleneksel kuaförlük sanatını bir araya getiriyor ve her bir müşterimize özel bir deneyim sunuyoruz."
+    },
+    "readMore": "Daha fazla",
+    "categories": {
+      "man": {
+        "title": "Erkek Saç Tasarımı",
+        "subTitle": "Modern bir yaklaşımla geleneksel kuaförlük sanatını bir araya getiriyor ve her bir müşterimize özel bir deneyim sunuyoruz."
+      },
+      "woman": {
+        "title": "Kadın Saç Tasarımı",
+        "subTitle": "Modern bir yaklaşımla geleneksel kuaförlük sanatını bir araya getiriyor ve her bir müşterimize özel bir deneyim sunuyoruz."
+      },
+      "organization": {
+        "title": "Organizasyon",
+        "subTitle": "Modern bir yaklaşımla geleneksel kuaförlük sanatını bir araya getiriyor ve her bir müşterimize özel bir deneyim sunuyoruz."
+      }
+    }
+  },
+
+  "gallery": {
+    "title": "Galeri",
+    "subTitle": "Çalışmalarımız"
+  },
+
+  "contact": {
+    "title": "İletişim",
+    "subTitle": "Bizimle iletişime geç",
+    "description": "Çok daha fazla bilgi sahibi olmak istiyorsanız, bizimle ilgili kanallar üzerinden iletişime geçebilirsiniz."
+  },
+
+  "footer": {
+    "phoneNumber": "Telefon Numarası",
+    "location": "Konum",
+    "workHours": "Çalışma Saatleri",
+    "homepage": "Anasayfa",
+    "aboutUs": "Hakkımızda",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim"
+  }
+}

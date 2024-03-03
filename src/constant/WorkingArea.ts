@@ -31,17 +31,17 @@ import c8 from "../../public/certificate/c8.jpg";
 
 export const workingArea = [
   {
-    name: "MAN HAAR ONTWERP",
+    name: "man",
     photo: man,
     desc: "Fusce id lorem risus. Duis mattis, nulla et placerat pretium, purus ex luctus nisi, ",
   },
   {
-    name: "VROUWEN HAARONTWERP",
+    name: "woman",
     photo: woman,
     desc: "Fusce id lorem risus. Duis mattis, nulla et placerat pretium, purus ex luctus nisi, ",
   },
   {
-    name: "ONTWERB",
+    name: "organization",
     photo: organization,
     desc: "Fusce id lorem risus. Duis mattis, nulla et placerat pretium, purus ex luctus nisi, ",
   },

@@ -17,14 +17,15 @@ import "swiper/css/scrollbar";
 
 import Image from "next/image";
 import { certificate, sliders } from "@/constant/WorkingArea";
+import { useTranslations } from "next-intl";
 
 export const Certificate = () => {
+  const t = useTranslations("aboutUs");
   return (
     <div className="bg-customGray pt-8 pb-16">
       <h2 className="text-2xl uppercase font-bold text-center mt-4 text-customYellow">
-        Certifacate
+        {t("certificate")}
       </h2>
-      <p className="text-4xl mb-16 text-center text-white ">Our Adequates</p>
 
       <div className="mb-16 mt-4 clamp">
         <Swiper

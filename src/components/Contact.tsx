@@ -2,19 +2,18 @@ import { Mail, Phone } from "lucide-react";
 import React from "react";
 import wp from "../../public/wpicon.svg";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export const Contact = () => {
+  const t = useTranslations("contact");
   return (
     <div id="contact" className="scroll-mt-28 flex flex-col items-center gap-8">
       <div className="text-center flex flex-col gap-4">
         <h2 className="text-customYellow text-bold text-center text-2xl font-bold">
-          CONTACT
+          {t("title")}
         </h2>
-        <p className="text-4xl max-w-2xl mx-auto">NEEM CONTACT MET ONS OP</p>
-        <p className="text-sm max-w-2xl mx-auto">
-          Als u meer informatie wilt, kunt u contact met ons opnemen via de
-          betreffende kanalen.
-        </p>
+        <p className="text-4xl max-w-2xl mx-auto"> {t("subTitle")}</p>
+        <p className="text-sm max-w-2xl mx-auto">{t("description")}</p>
       </div>
 
       <div className="flex gap-8 ">

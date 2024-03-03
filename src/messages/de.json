@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "homepage": "Startseite",
+    "aboutUs": "Über Uns",
+    "services": "Unsere Dienstleistungen",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "title": "Ihren Stil verfeinern",
+    "subTitle": "Unser Expertenteam verfolgt Trends und verleiht Ihren Haaren eine neue Schönheit.",
+    "readMore": "Mehr erfahren"
+  },
+
+  "aboutUs": {
+    "title": "Über Uns",
+    "subTitle": "Das Bild ist das, was wir in den Köpfen anderer hinterlassen.",
+    "notes": {
+      "note1": "In jeder Strähne Haar gibt es eine Spur Ihrer Persönlichkeit. Gestalten Sie Ihr Bild in unserem Salon, um das perfekte Bild zu schaffen, das Sie in den Köpfen anderer hinterlassen.",
+      "note2": "Denken Sie daran, dass Ihre Haare auch eine Reflexion Ihres Charakters sind."
+    },
+    "readMore": "Mehr erfahren",
+    "brandsWork": "Marken, mit denen wir arbeiten",
+    "certificate": "Unsere Zertifikate"
+  },
+
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subTitle": "IHRE HAARE UND IHR AUSSEHEN SIND BEI UNS IN GUTEN HÄNDEN",
+    "notes": {
+      "note1": "Wir verbinden einen modernen Ansatz mit der traditionellen Kunst des Friseurhandwerks und bieten jedem unserer Kunden ein einzigartiges Erlebnis.",
+      "note2": "Denken Sie daran, dass Ihre Haare auch eine Reflexion Ihres Charakters sind."
+    },
+    "readMore": "Mehr erfahren",
+    "categories": {
+      "man": {
+        "title": "Herrenhaardesign",
+        "subTitle": "Durch die Verbindung eines modernen Ansatzes mit der traditionellen Kunst des Friseurhandwerks bieten wir jedem unserer männlichen Kunden ein einzigartiges Erlebnis."
+      },
+      "woman": {
+        "title": "Damenhaardesign",
+        "subTitle": "Durch die Verbindung eines modernen Ansatzes mit der traditionellen Kunst des Friseurhandwerks bieten wir jedem unserer weiblichen Kunden ein einzigartiges Erlebnis."
+      },
+      "organization": {
+        "title": "Organisation",
+        "subTitle": "Durch die Verbindung eines modernen Ansatzes mit der traditionellen Kunst des Friseurhandwerks bieten wir ein einzigartiges Erlebnis für besondere Veranstaltungen."
+      }
+    }
+  },
+
+  "gallery": {
+    "title": "Galerie",
+    "subTitle": "Unsere Arbeiten"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "subTitle": "Nehmen Sie Kontakt mit uns auf",
+    "description": "Wenn Sie mehr erfahren möchten, können Sie uns über die uns betreffenden Kanäle kontaktieren."
+  },
+
+  "footer": {
+    "phoneNumber": "Telefonnummer",
+    "location": "Standort",
+    "workHours": "Arbeitszeiten",
+    "homepage": "Startseite",
+    "aboutUs": "Über Uns",
+    "services": "Unsere Dienstleistungen",
+    "contact": "Kontakt"
+  }
+}

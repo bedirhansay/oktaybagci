@@ -1,9 +1,15 @@
 import { Phone, LocateIcon, Clock, MapPin } from "lucide-react";
+
 import React from "react";
 import logo from "../../public/logo-img.png";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 export const Footer = () => {
+  const local = useLocale();
+  const t = useTranslations("footer");
+
   return (
     <div className="bg-customGray ">
       <div className="clamp">
@@ -14,7 +20,7 @@ export const Footer = () => {
             </span>
 
             <div>
-              <span className="flex gap-2">Telefoonnummer</span>
+              <span className="flex gap-2"> {t("phoneNumber")}</span>
               <a href="tel:+905325275748" className="text-center">
                 +90 532 527 57 48
               </a>
@@ -27,7 +33,7 @@ export const Footer = () => {
             </span>
 
             <div className="flex flex-col">
-              <span className="!text-left">Plaats</span>
+              <span className="!text-left">{t("location")}</span>
               <p>
                 BORAZANLAR MH. AKŞEMSETTİN CD. GAYRETLİ, APT. NO:6, 14100
                 Merkez/Bolu
@@ -41,7 +47,7 @@ export const Footer = () => {
             </span>
 
             <div>
-              <span className="flex gap-2">Werkuren</span>
+              <span className="flex gap-2">{t("workHours")}</span>
               <p>09:00-21:00</p>
             </div>
           </div>
@@ -52,16 +58,16 @@ export const Footer = () => {
           <Image alt="logo" src={logo} />
           <ul className=" flex text-white cursor-pointer gap-4 justify-between items-center  ">
             <li>
-              <a href="/">Startpagina</a>
+              <Link href={`/${local}`}>{t("homepage")}</Link>
             </li>
             <li>
-              <a href="/over-ons">Over Ons</a>
+              <Link href={`/${local}/over-ons`}>{t("aboutUs")}</Link>
             </li>
             <li>
-              <a href="/#onze-diesten">Onze Diesten</a>
+              <Link href={`/${local}/#onze-diesten`}>{t("services")}</Link>
             </li>
             <li>
-              <a href="/#contact">Contact</a>
+              <Link href={`/${local}/#contact`}>{t("contact")}</Link>
             </li>
           </ul>
           <hr />

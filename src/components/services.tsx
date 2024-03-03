@@ -1,8 +1,16 @@
+"use client";
 import React from "react";
 import { workingArea } from "@/constant/WorkingArea";
 import { ServiceCard } from "./ui/ServiceCard";
+import { useTranslations } from "use-intl";
+import { useLocale } from "next-intl";
+import { getTranslation } from "@/lib/helper/getTranslation";
 
 export const Services = () => {
+  const locale = useLocale();
+  const t = (key: string) => getTranslation(key, locale);
+
+  console.log(t);
   return (
     <div
       id="onze-diesten"
@@ -10,23 +18,18 @@ export const Services = () => {
     >
       <div className="text-center flex flex-col gap-4">
         <h2 className="text-customYellow text-bold text-center text-2xl font-bold">
-          DIENSTEN
+          {t("services.title")}
         </h2>
-        <p className="text-4xl max-w-2xl mx-auto">
-          UW HAAR EN UW UITERLIJKVERTROUWD AAN ONS
-        </p>
-        <p className="text-sm max-w-2xl mx-auto">
-          Wij combineren een moderne aanpak met de traditionele kapperskunst en
-          bieden elk van onze klanten een bijzondere ervaring.
-        </p>
+        <p className="text-4xl max-w-2xl mx-auto">{t("services.subTitle")}</p>
+        <p className="text-sm max-w-2xl mx-auto">{t("services.notes.note1")}</p>
       </div>
       <div className="flex gap-2  mx-auto flex-col md:flex-row">
         {workingArea.map((item, i) => (
           <ServiceCard
             key={i + "idx"}
             image={item.photo}
-            title={item.name}
-            desc={item.desc}
+            title={t(`services.categories.${item.name}.title`)}
+            desc={t(`services.categories.${item.name}.subTitle`)}
           />
         ))}
       </div>

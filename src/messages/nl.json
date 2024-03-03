@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "homepage": "Startpagina",
+    "aboutUs": "Over Ons",
+    "services": "Onze Diensten",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Je Stijl Verfijnen",
+    "subTitle": "Ons deskundige team volgt trends en voegt een vleugje nieuwe schoonheid toe aan je haar.",
+    "readMore": "Lees Meer"
+  },
+
+  "aboutUs": {
+    "title": "Over Ons",
+    "subTitle": "Beeld is wat we achterlaten in de gedachten van anderen.",
+    "notes": {
+      "note1": "In elke haarstreng zit een spoor van jouw persoonlijkheid. Vorm je beeld in onze salon om het perfecte plaatje te creëren dat je achterlaat in de gedachten van anderen.",
+      "note2": "Onthoud, je haar is ook een reflectie van je karakter."
+    },
+    "readMore": "Lees Meer",
+    "brandsWork": "Merken waarmee we samenwerken",
+    "certificate": "Onze Certificaten"
+  },
+
+  "services": {
+    "title": "Onze Diensten",
+    "subTitle": "JE HAAR EN UITERLIJK ZIJN BIJ ONS IN GOEDE HANDEN",
+    "notes": {
+      "note1": "We combineren een moderne aanpak met de traditionele kunst van het kappersvak en bieden een unieke ervaring aan elk van onze klanten.",
+      "note2": "Onthoud, je haar is ook een reflectie van je karakter."
+    },
+    "readMore": "Lees Meer",
+    "categories": {
+      "man": {
+        "title": "Herendesign",
+        "subTitle": "Met een moderne aanpak en de traditionele kunst van het kappersvak bieden we een unieke ervaring aan elke mannelijke klant."
+      },
+      "woman": {
+        "title": "Damesdesign",
+        "subTitle": "Met een moderne aanpak en de traditionele kunst van het kappersvak bieden we een unieke ervaring aan elke vrouwelijke klant."
+      },
+      "organization": {
+        "title": "Organisatie",
+        "subTitle": "Met een moderne aanpak en de traditionele kunst van het kappersvak bieden we een unieke ervaring voor speciale evenementen."
+      }
+    }
+  },
+
+  "gallery": {
+    "title": "Galerij",
+    "subTitle": "Onze Werken"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Neem contact met ons op",
+    "description": "Als je meer wilt weten, kun je contact met ons opnemen via de kanalen die met ons te maken hebben."
+  },
+
+  "footer": {
+    "phoneNumber": "Telefoonnummer",
+    "location": "Locatie",
+    "workHours": "Werkuren",
+    "homepage": "Startpagina",
+    "aboutUs": "Over Ons",
+    "services": "Onze Diensten",
+    "contact": "Contact"
+  }
+}
