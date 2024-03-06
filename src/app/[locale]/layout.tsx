@@ -26,10 +26,10 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        {/* <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
-        </NextIntlClientProvider> */}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
