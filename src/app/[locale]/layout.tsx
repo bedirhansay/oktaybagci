@@ -25,12 +25,12 @@ export default function LocaleLayout({
   const messages = useMessages();
   return (
     <html lang={locale}>
-      {/* <body className={inter.className}>
+      <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
         </NextIntlClientProvider>
-      </body> */}
+      </body>
     </html>
   );
 }
