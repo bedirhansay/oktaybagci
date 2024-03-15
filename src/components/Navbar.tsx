@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import LocalSwitcher from "./localSwitcher";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
+import { LangSwitcher } from "./LangSwitcher";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -114,7 +115,6 @@ export const Navbar = () => {
                 {t("contact")}
               </Link>
             </li>
-
             <LocalSwitcher />
           </ul>
 

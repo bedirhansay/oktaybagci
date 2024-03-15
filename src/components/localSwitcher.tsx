@@ -21,24 +21,22 @@ export default function LocalSwitcher() {
     });
   };
 
-  console.log(localActive);
-
   return (
-    <label className="flex items-center rounded appearance-none border w-fit">
-      <p className="sr-only">change language</p>
-
+    <form action="">
       <select
+        id="countries"
+        className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 md:p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         defaultValue={localActive}
-        className="bg-transparent appearance-none py-1   px-2 focus:none focus:outline-none w-full"
+        // className="bg-transparent  relative py-1 w-fit   px-2 focus:none focus:outline-none "
         onChange={onSelectChange}
         disabled={isPending}
       >
         {LocalList.map((item) => (
-          <option className="!w-40 " key={item.lang} value={item.lang}>
-            {item.img}
+          <option className="!w-40 !text-sm " key={item.lang} value={item.lang}>
+            {item.img} {item.name}
           </option>
         ))}
       </select>
-    </label>
+    </form>
   );
 }

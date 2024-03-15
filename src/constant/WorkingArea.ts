@@ -33,17 +33,14 @@ export const workingArea = [
   {
     name: "man",
     photo: man,
-    desc: "Fusce id lorem risus. Duis mattis, nulla et placerat pretium, purus ex luctus nisi, ",
   },
   {
     name: "woman",
     photo: woman,
-    desc: "Fusce id lorem risus. Duis mattis, nulla et placerat pretium, purus ex luctus nisi, ",
   },
   {
     name: "organization",
     photo: organization,
-    desc: "Fusce id lorem risus. Duis mattis, nulla et placerat pretium, purus ex luctus nisi, ",
   },
 ];
 
