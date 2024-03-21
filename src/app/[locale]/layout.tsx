@@ -26,14 +26,14 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        {/* <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
-        </NextIntlClientProvider> */}
-        <strong className="absolutes text-4xl text-center">
+        </NextIntlClientProvider>
+        {/* <strong className="absolutes text-4xl text-center">
           {" "}
           Server Error. Please Contact Your Developer Team.
-        </strong>
+        </strong> */}
       </body>
     </html>
   );
