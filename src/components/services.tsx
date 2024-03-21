@@ -25,6 +25,7 @@ export const Services = () => {
       <div className="flex gap-2  mx-auto flex-col md:flex-row">
         {workingArea.map((item, i) => (
           <ServiceCard
+            href={item.name}
             key={i + "idx"}
             image={item.photo}
             title={t(`services.categories.${item.name}.title`)}

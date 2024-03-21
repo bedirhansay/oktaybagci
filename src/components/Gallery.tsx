@@ -45,6 +45,7 @@ export const Gallery = () => {
             <SwiperSlide className="m-2 !w-96" key={idx + "k"}>
               <Image
                 width={400}
+                height={400}
                 loading="lazy"
                 className=" aspect-square"
                 src={item}

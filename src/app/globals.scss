@@ -126,3 +126,7 @@
   object-fit: contain;
   mix-blend-mode: multiply;
 }
+
+.grid-min-max {
+  @apply grid justify-between grid-cols-[repeat(auto-fill,minmax(350px,1fr))];
+}

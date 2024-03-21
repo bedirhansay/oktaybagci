@@ -1,4 +1,4 @@
-import { Phone, LocateIcon, Clock, MapPin } from "lucide-react";
+import { Phone, Clock, MapPin } from "lucide-react";
 
 import React from "react";
 import logo from "../../public/logo-img.png";
@@ -11,7 +11,7 @@ export const Footer = () => {
   const t = useTranslations("footer");
 
   return (
-    <div className="bg-customGray ">
+    <div className="bg-customGray mt-28 ">
       <div className="clamp">
         <div className="flex flex-col gap-4 md:flex-row justify-between py-12 text-white">
           <div className="flex gap-2 items-center">
@@ -54,7 +54,7 @@ export const Footer = () => {
         </div>
         <hr />
 
-        <div className="flex flex-col gap-8 items-center justify-center my-8">
+        <div className="flex flex-col gap-8 items-center justify-center py-8">
           <Image alt="logo" src={logo} />
           <ul className=" flex text-white cursor-pointer gap-4 justify-between items-center  ">
             <li>

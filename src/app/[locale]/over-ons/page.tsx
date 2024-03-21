@@ -16,7 +16,7 @@ export default function page() {
         <Brands />
       </div>
       <Certificate />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
