@@ -44,15 +44,7 @@ export const workingArea = [
   },
 ];
 
-export const sliders = [
-  slider1,
-  "https://tr.pinterest.com/pin/819092251007484283",
-  slider2,
-  slider6,
-  slider4,
-  slider3,
-  slider5,
-];
+export const sliders = [slider1, slider2, slider6, slider4, slider3, slider5];
 export const certificate = [c1, c2, c3, c4, c5, c6, c7, c8];
 
 export const brands = [
