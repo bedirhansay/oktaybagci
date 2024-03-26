@@ -17,6 +17,7 @@ import osis from "../../public/markalar/osis.png";
 import swarz from "../../public/markalar/svarz.png";
 import wella from "../../public/markalar/wella.png";
 import tony from "../../public/markalar/tony.png";
+import davines from "../../public/markalar/davines.png";
 
 import c1 from "../../public/certificate/c1.jpg";
 import c2 from "../../public/certificate/c2.jpg";
@@ -56,4 +57,5 @@ export const brands = [
   swarz,
   wella,
   tony,
+  davines,
 ];

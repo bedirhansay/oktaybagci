@@ -17,7 +17,7 @@ const listImages = [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10];
 export const Man = () => {
   return (
     <div className=" bg-gray-200">
-      <div className="container grid-min-max py-32 gap-4">
+      <div className="container grid-min-max py-32 gap-4 ">
         {listImages.map((image, index) => (
           <div key={index} className={`div${index + 1}`}>
             <Image alt="" className="rounded-md shadow-xl" src={image} />
